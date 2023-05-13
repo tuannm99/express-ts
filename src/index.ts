@@ -10,6 +10,6 @@ const helmet = Helmet()
 
 const application = new Application(app)
 const routers = [userRouter]
-const middlewares = [helmet]
+const middlewares = [express.json(), helmet]
 
 ApplicationFactory(application, routers, middlewares)
